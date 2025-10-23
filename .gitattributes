@@ -1,0 +1,21 @@
+# 默认按文本处理：仓库内统一存储为 LF，检出时按平台自动转换
+* text=auto
+
+# 源码与工程文件
+*.cpp  text
+*.h    text
+*.ui   text
+*.pro  text
+*.pri  text
+*.qrc  text
+*.md   text
+*.json text
+*.txt  text
+
+# 二进制资源，禁止做换行符转换
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.ico  binary
+*.gif  binary
+*.bmp  binary

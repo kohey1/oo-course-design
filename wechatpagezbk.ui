@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WeChatPageZbk</class>
+ <widget class="QWidget" name="WeChatPageZbk">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>263</width>
+    <height>641</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLineEdit" name="letSearch">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="twList">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>50</y>
+     <width>261</width>
+     <height>591</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> QTabWidget::pane {
+        border: 1px solid #C2C7CB;
+        top: -1px;
+        
+    }/*background-color: #F0F0F0;*/
+    
+   
+    
+    QTabBar::tab {
+        border: 1px solid #C4C4C3;
+        border-bottom: none;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        min-width: 60px;  /* 增加最小宽度 */
+        min-height: 20px;  /* 增加最小高度 */
+        padding: 8px 12px;
+        margin-right: 2px;
+        font-size: 12pt;   /* 增大字体 */
+    }
+    
+    QTabBar::tab:selected {
+        background-color: white;
+        border-color: #9B9B9B;
+        border-bottom-color: #F0F0F0;
+    }
+    
+    QTabBar::tab:!selected {
+	background-color:rgb(222, 222, 222);
+        margin-top: 2px;
+    }
+    
+    QTabBar::tab:hover:!selected {
+        background-color:#D0D0D0;
+    }
+
+
+</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+   <widget class="QWidget" name="TabWXFriend">
+    <attribute name="icon">
+     <iconset resource="main.qrc">
+      <normaloff>:/pic/WeChat_friends.png</normaloff>:/pic/WeChat_friends.png</iconset>
+    </attribute>
+    <attribute name="title">
+     <string>好友</string>
+    </attribute>
+    <widget class="FriendListWidget" name="lstFriend">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>261</width>
+       <height>551</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="TabWXGroup">
+    <attribute name="icon">
+     <iconset resource="main.qrc">
+      <normaloff>:/pic/WeChat_groups.png</normaloff>:/pic/WeChat_groups.png</iconset>
+    </attribute>
+    <attribute name="title">
+     <string>群组</string>
+    </attribute>
+    <widget class="FriendListWidget" name="lstGroup">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>261</width>
+       <height>551</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QToolButton" name="moreButton">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>10</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="main.qrc">
+     <normaloff>:/pic/add.png</normaloff>:/pic/add.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>15</width>
+     <height>15</height>
+    </size>
+   </property>
+   <property name="popupMode">
+    <enum>QToolButton::ToolButtonPopupMode::InstantPopup</enum>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>FriendListWidget</class>
+   <extends>QListWidget</extends>
+   <header>friendlistwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="main.qrc"/>
+ </resources>
+ <connections/>
+</ui>

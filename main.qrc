@@ -1,0 +1,37 @@
+<RCC>
+    <qresource prefix="/">
+        <file>pic/87D2B7BB181C40F83726AF5B40E793AC.ico</file>
+        <file>pic/services.png</file>
+        <file>pic/services.ico</file>
+        <file>pic/services1.ico</file>
+        <file>pic/icon.ico</file>
+        <file>pic/icon1.ico</file>
+        <file>pic/favicon.ico</file>
+        <file>pic/qq_using.ico</file>
+        <file>pic/wechat_offLine.ico</file>
+        <file>pic/wechat_using.ico</file>
+        <file>pic/weibo_offLine.ico</file>
+        <file>pic/weibo_using.ico</file>
+        <file>pic/qq_offLine.ico</file>
+        <file>pic/search.png</file>
+        <file>pic/friendIcon.png</file>
+        <file>pic/groupIcon.png</file>
+        <file>pic/friendIcon1.png</file>
+        <file>pic/444qqUseravator.jpg</file>
+        <file>pic/waitqqUseravator.jpg</file>
+        <file>pic/555qqUseravator.jpg</file>
+        <file>pic/666qqUseravator.jpg</file>
+        <file>pic/123qqUseravator.jpg</file>
+        <file>pic/777qqUseravator.jpg</file>
+        <file>pic/888qqUseravator.jpg</file>
+        <file>pic/WeChat_friends.png</file>
+        <file>pic/WeChat_groups.png</file>
+        <file>pic/add.png</file>
+        <file>pic/addFriend.png</file>
+        <file>pic/createGroup.png</file>
+        <file>pic/set.png</file>
+        <file>pic/logout.png</file>
+        <file>pic/systemNotices.png</file>
+        <file>pic/newsystemNotices.png</file>
+    </qresource>
+</RCC>
